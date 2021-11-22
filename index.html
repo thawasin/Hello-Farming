@@ -45,6 +45,11 @@
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
     function createUniversalLink() {
+      await liff.shareTargetPicker([
+        {"type": "text",
+        "text": "This message was sent by ShareTargetPicker"
+        }
+        ])
     }
 
     async function shareMsg() {
